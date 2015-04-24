@@ -630,7 +630,7 @@ body.no-sidebar #primary {
 }
 #main-slider {
   line-height: 0;
-  background: #eeeeee;
+  background-color:#fcfcfc;
 }
 #main-slider .flexslider {
   margin-bottom: 0;
@@ -648,6 +648,7 @@ body.no-sidebar #primary {
 #main-slider .metaslider,
 #main-slider #metaslider-demo {
   margin: 0 auto;
+  width:80%;
 }
 /* =Responsive Layout
 ----------------------------------------------- */
@@ -1295,7 +1296,6 @@ article.page.post-with-thumbnail-icon .entry-main {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 1px solid #aaaaaa;
 }
 .entry-content blockquote cite {
   font-weight: bold;
@@ -1649,7 +1649,7 @@ article.page.post-with-thumbnail-icon .entry-main {
 }
 
 #commentform label {
-  margin-top: 2px;
+  margin-top: 85px;
   display: block;
   float: left;
   width: 25%;
@@ -1700,6 +1700,7 @@ article.page.post-with-thumbnail-icon .entry-main {
   color: #999;
   margin-bottom: 10px;
   text-align: right;
+  display:none;
 }
 #commentform .required {
   color: #a40802;
@@ -1998,6 +1999,10 @@ body.layout-full {
 /* Search widget */
 #searchsubmit {
   display: none;
+}
+.textwidget p:first-child{
+ width:80%;
+ margin:0 auto;
 }
 .textwidget p:first-child {
   margin-top: 0;
@@ -3155,9 +3160,10 @@ body.layout-full {
 
 /*專欄文章牆下方readmore按鈕*/
 .pt-cv-content a {
- background-color: #888888;
- color: #FFFFFF;
+ background-color:#fcfcfc;
+ color:#888888;
  border: 0;
+ text-transform:uppercase;
 }
 
 .pt-cv-content a:hover{
@@ -3204,6 +3210,7 @@ body.layout-full {
 /*選單中各個選項之後插入的內容*/
 .main-navigation ul li:after{  
  content:"|";
+ font-size:20px;
 }
 
 /*選單中最後ㄧ個選項後面不插入文字*/
@@ -3220,6 +3227,11 @@ body.layout-full {
 .main-navigation ul li ul li
 { 
   background-color:#fcfcfc;
+}
+
+/*子選單寬度*/
+.sub-menu li{
+ width:120px;
 }
 
 /*選單中各個選項的文字區塊*/
@@ -3306,11 +3318,20 @@ header#masthead .hgroup{
  width:auto;
 }
 
-.sub-menu li{
- width:120px;
-}
-
+/*專欄文章*/
 .articlepart{
  width:80%; 
  margin:0 auto;
+ background-color:#fcfcfc;
+}
+
+/*迴響區*/
+#nav-below,
+#comments{
+ width:80%; 
+ margin:0 auto;
+}
+
+#form-allowed-tags{
+ display:none;
 }
