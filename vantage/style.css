@@ -624,10 +624,13 @@ body.no-sidebar #primary {
   float: right;
   width: 23.762%;
 }
+
+/*主選單下方區塊*/
 #main {
   background: #fcfcfc;
-  padding: 35px;
+  padding:35px;
 }
+
 #main-slider {
   line-height: 0;
   background-color:#fcfcfc;
@@ -1695,13 +1698,7 @@ article.page.post-with-thumbnail-icon .entry-main {
   font-size: 0.8em;
   color: #999;
 }
-#commentform .logged-in-as {
-  font-size: 0.8em;
-  color: #999;
-  margin-bottom: 10px;
-  text-align: right;
-  display:none;
-}
+
 #commentform .required {
   color: #a40802;
 }
@@ -3282,7 +3279,6 @@ header#masthead .hgroup{
  height:auto;  
  width:100%;
  text-align:center;
-
 }
 
 .cmenu div{
@@ -3318,11 +3314,46 @@ header#masthead .hgroup{
  width:auto;
 }
 
-/*專欄文章*/
+/*有背景專欄文章*/
+.articleback .articlepart{
+ width:80%; 
+ margin:0 auto;
+ background-color:#fcfcfc;
+ padding:80px 40px 0px 40px;
+}
+
+/*無背景專欄文章*/
 .articlepart{
  width:80%; 
  margin:0 auto;
  background-color:#fcfcfc;
+ padding:0px 40px 0px 40px;
+}
+
+
+/*專欄背景空格*/
+.articlespace{
+ height:400px;
+}
+
+/*專欄文章背景圖片*/
+.articleback{
+ background-size:100% 600px;
+ background-repeat: no-repeat;
+}
+
+/*專欄文章原始標題*/
+.entry-header{
+ display:none;
+}
+
+/*專欄文章逼題*/
+.articletitle{
+  color: #3b3b3b;
+  font-size: 20px;
+  font-weight: 500;
+  height:60px;
+ 
 }
 
 /*迴響區*/
@@ -3332,6 +3363,28 @@ header#masthead .hgroup{
  margin:0 auto;
 }
 
+/*迴響區範例內容*/
 #form-allowed-tags{
  display:none;
+}
+
+/*迴響區確認登入使用者*/
+#commentform .logged-in-as {
+  font-size: 0.8em;
+  color: #999;
+  margin-bottom: 10px;
+  text-align: right;
+  display:none;
+}
+
+/*影片標題*/
+.vtitle{
+  background-color:#fcfcfc;
+  border-top-style:solid; 
+  border-bottom-style:solid;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  width:80%;
+  margin:0 auto;
+  margin-top:5px;
 }
