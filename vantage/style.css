@@ -628,7 +628,7 @@ body.no-sidebar #primary {
 /*主選單下方區塊*/
 #main {
   background: #fcfcfc;
-  padding:35px;
+  padding:0px 35px 35px 35px;
 }
 
 #main-slider {
@@ -3114,14 +3114,17 @@ body.layout-full {
   content: "\e604";
 }
 
- /*最上方選單*/
+
+/*------新增的CSS-------*/
+ 
+/*最上方選單*/
 .hmenu {  
  height:auto;  
  width:100%;
  color: #e2e2e2;
 }
 
-/*選單內連結*/
+/*上方選單內連結*/
 .hmenu .hitem{      
   display:inline;
   line-height:30px;
@@ -3163,6 +3166,7 @@ body.layout-full {
  text-transform:uppercase;
 }
 
+/*滑過專欄文章牆下方readmore按鈕*/
 .pt-cv-content a:hover{
  background-color: #888888;
  color: #FFFFFF;
@@ -3170,28 +3174,27 @@ body.layout-full {
 
 /*含有水平分割線的標題*/
 .hrdiv {
- width:100%; 
+ width:100%;
  text-align:center;
  display:inline-block;
 }
 
 /*水平分割線*/
 .hrdiv hr {
- width:40%; 
+ width:30%; 
  display:inline-block;
  vertical-align:middle;
 }
 
 /*分割線中夾的字*/
 .hrdiv h1{
+ width:15%;
  font-size:2.25em;
  display:inline-block;
- margin-left:20px;
- margin-right:20px;
 }
 
 /*網站主要選單區塊*/
-.main-navigation {             
+.main-navigation{             
   background-color:#fcfcfc;
   border-top-style:solid; 
   border-bottom-style:solid;
@@ -3221,8 +3224,7 @@ body.layout-full {
 }
 
 /*選單中各個選項的子選項區塊*/
-.main-navigation ul li ul li
-{ 
+.main-navigation ul li ul li{ 
   background-color:#fcfcfc;
 }
 
@@ -3254,7 +3256,7 @@ body.layout-full {
  
 /*網站logo+選單區塊*/
 header#masthead {
- padding-bottom:15px;
+ padding-bottom:10px;
 }
 
 /*網站logo區塊*/
@@ -3276,18 +3278,15 @@ header#masthead .hgroup{
 
 /*專欄選單*/
 .cmenu{
+ width:25%;
  height:auto;  
- width:100%;
  text-align:center;
-}
-
-.cmenu div{
- width:35%;
  border-style:solid;
  border-width:1px;
  margin:0 auto;
 }
 
+/*專欄選單選項*/
 .cmenu .citem{
  display:inline; 
  width:50px;
@@ -3295,23 +3294,45 @@ header#masthead .hgroup{
  padding: 5px;
 }
 
+/*專欄選單選項內連結*/
 .cmenu .citem a{
  text-decoration:none;
  color:black;
 }
 
-/*關於我們側邊選單*/
-.aboutside ul{
+/*社群左側選單區塊*/
+.socialside{
+ float:left;
+ text-align:center;
+ width:15%;
+}
+
+/*社群左側側邊選單*/
+.socialside ul{
  list-style-type: none;
 }
 
-.aboutside ul li{
+/*社群左側選單選項*/
+.socialside ul li{
  margin:5px 0px 5px 0px;
  padding:5px;
  font-size:15px;
  border-style:solid;
  border-width:1px;
  width:auto;
+}
+
+/*社群右側照片區塊*/
+.socialphoto{
+ float:right;
+ width:85%;
+}
+
+/*社群右側單張照片區塊*/
+.socialphoto div{
+ display:inline-block ; 
+ margin:10px 3px 10px 3px;
+ width:21.3%;
 }
 
 /*有背景專欄文章*/
@@ -3329,7 +3350,6 @@ header#masthead .hgroup{
  background-color:#fcfcfc;
  padding:0px 40px 0px 40px;
 }
-
 
 /*專欄背景空格*/
 .articlespace{
@@ -3353,7 +3373,6 @@ header#masthead .hgroup{
   font-size: 20px;
   font-weight: 500;
   height:60px;
- 
 }
 
 /*迴響區*/
