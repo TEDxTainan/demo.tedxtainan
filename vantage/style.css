@@ -3375,6 +3375,11 @@ header#masthead .hgroup{
   height:60px;
 }
 
+/*專欄文章摘要*/
+.artexcerpt{
+ display:none;
+}
+
 /*迴響區*/
 #nav-below,
 #comments{
