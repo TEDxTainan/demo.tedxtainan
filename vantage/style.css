@@ -3433,3 +3433,13 @@ header#masthead .hgroup{
  border-bottom-right-radius:3px;
  border-bottom-left-radius:3px;
 }
+
+/*搜尋結果文章區塊*/
+.searchresult{
+ display:inline-block;
+ width:30%;
+ margin:0px 5px 35px 5px;
+ padding-bottom:20px;
+ border-bottom-style:solid;
+ border-bottom-width: 1px;
+}
