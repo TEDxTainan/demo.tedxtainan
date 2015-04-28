@@ -1271,14 +1271,14 @@ article.page.post-with-thumbnail-icon .entry-main {
   clear: both;
 }
 .entry-content a {
-  color: #248cc8;
+  color: #428bca;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 .entry-content a:hover {
-  color: #f47e3c;
+  color: #428bca;
 }
 .entry-content p,
 .entry-content > ul,
@@ -3150,7 +3150,7 @@ body.layout-full {
 
 /*專欄文章牆照片下方內容*/
 .pt-cv-content {
- text-align: center;
+ text-align: left;
 }
 
 /*專欄文章牆文章標題*/
@@ -3164,12 +3164,15 @@ body.layout-full {
  color:#888888;
  border: 0;
  text-transform:uppercase;
+ width:35%;
+ margin-left:32.5%;
+ margin-right:32.5%;
 }
 
 /*滑過專欄文章牆下方readmore按鈕*/
 .pt-cv-content a:hover{
- background-color: #888888;
- color: #FFFFFF;
+ background-color:#888888;
+ color:#fcfcfc;
 }
 
 /*含有水平分割線的標題*/
@@ -3411,4 +3414,27 @@ header#masthead .hgroup{
   width:80%;
   margin:0 auto;
   margin-top:5px;
+}
+
+/*postgrid 繼續閱讀按鈕*/
+.post-grid-container.flat .content .read-more{
+ text-align:center;
+ display:block;
+ color:#888888;
+ margin-top:20px;
+ padding-top:5px;
+ padding-bottom:5px;
+ width:35%;
+ margin-left:32.5%;
+ margin-right:32.5%;
+}
+
+/*滑過postgrid 繼續閱讀按鈕*/
+.post-grid-container.flat .content .read-more:hover{
+ background-color:#888888;
+ color:#fcfcfc;
+ border-top-right-radius:3px;
+ border-top-left-radius:3px;
+ border-bottom-right-radius:3px;
+ border-bottom-left-radius:3px;
 }
