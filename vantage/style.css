@@ -3365,11 +3365,6 @@ header#masthead .hgroup{
  background-repeat: no-repeat;
 }
 
-/*專欄文章原始標題*/
-.entry-header{
- display:none;
-}
-
 /*專欄文章逼題*/
 .articletitle{
   color: #3b3b3b;
