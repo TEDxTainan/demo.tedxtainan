@@ -528,9 +528,8 @@ header#masthead .hgroup .support-text {
   max-width: 50%;
 }
 header#masthead .hgroup #header-sidebar {
-  padding-top: 15px;
-  padding-bottom: 15px;
   height: 100%;
+  width:20%;
   position: absolute;
   right: 0;
   top: 0;
@@ -556,7 +555,7 @@ header#masthead .hgroup #header-sidebar aside.widget {
   margin-bottom: 0;
   float: left;
   position: relative;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 header#masthead .hgroup #header-sidebar aside.widget:last-child {
   margin-right: 0;
@@ -697,6 +696,7 @@ body.no-sidebar #primary {
     display: block;
     margin-top: 30px;
     max-width: 100%;
+    margin:0 auto;
   }
   body.responsive header#masthead .hgroup .support-text img,
   body.responsive header#masthead .hgroup #header-sidebar img {
@@ -710,8 +710,7 @@ body.no-sidebar #primary {
     margin-top:0px;
   }
   body.responsive header#masthead .hgroup #header-sidebar .widget {
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     float: none;
   }
   body.responsive #primary,
@@ -843,7 +842,7 @@ body.responsive.layout-full #page-wrapper .full-container {
   display: inline-block;
   text-decoration: none;
   color: #e2e2e2;
-  font-weight: bold;
+  font-weight:200;
 }
 .main-navigation.sticky {
   -webkit-box-shadow: 0 2px 1px rgba(0,0,0,0.15);
@@ -1920,24 +1919,23 @@ body.layout-full {
   z-index: 200;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 60%;
   text-indent: -99999px;
-  width: 32px;
-  height: 85px;
+  width: 40px;
+  height: 40px;
   margin-top: -52px;
-  opacity: 0;
   -webkit-transition: opacity 0.2s ease;
   -moz-transition: opacity 0.2s ease;
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
 .flexslider .flex-direction-nav li a.flex-prev {
-  left: 0;
-  background: url(images/sprites/gallery-prev.png);
+  left: 40px;
+  background: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
 }
 .flexslider .flex-direction-nav li a.flex-next {
-  right: 0;
-  background: url(images/sprites/gallery-next.png);
+  right: 40px;
+  background: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .flexslider .flex-direction-nav li a {
@@ -1945,11 +1943,11 @@ body.layout-full {
   }
   .flexslider .flex-direction-nav li a.flex-prev {
     background-size: cover;
-    background-image: url(images/retina/gallery-prev.png);
+    background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
   }
   .flexslider .flex-direction-nav li a.flex-next {
     background-size: cover;
-    background-image: url(images/retina/gallery-next.png);
+    background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
   }
 }
 .flexslider:hover .flex-direction-nav li a {
@@ -2206,12 +2204,14 @@ body.layout-full {
   text-decoration: none;
   display: block;
 }
+
+/*header圖示*/
 .widget_circleicon-widget .circle-icon-box .circle-icon {
   position: absolute;
   background-color: #3a3b3e;
   display: inline-block;
-  width: 65px;
-  height: 65px;
+  width: 30px;
+  height: 30px;
   -webkit-border-radius: 130px;
   -moz-border-radius: 130px;
   border-radius: 130px;
@@ -2253,7 +2253,7 @@ body.layout-full {
   margin-bottom: 0;
 }
 .widget_circleicon-widget .circle-icon-box a.more-button {
-  display: block;
+  display: none;
   text-decoration: none;
   color: #3b3b3b;
   font-weight: bold;
@@ -2281,7 +2281,7 @@ body.layout-full {
   margin-left: -32.5px;
 }
 .widget_circleicon-widget .circle-icon-box.circle-icon-position-bottom {
-  padding-bottom: 75px;
+  padding-bottom: 30px;
 }
 .widget_circleicon-widget .circle-icon-box.circle-icon-position-bottom .circle-icon {
   bottom: 0;
@@ -3240,7 +3240,7 @@ body.layout-full {
 .main-navigation ul li a{  
   padding-left:8px;
   padding-right:8px;
-  font-size:20px;
+  font-size:18px;
   color:#000000;
   padding-bottom:0px;
   padding-top:0px;
@@ -3411,6 +3411,20 @@ header#masthead .hgroup{
   margin-top:5px;
 }
 
+/*postgrid 文章內容*/
+.post-grid-container.flat .content{
+ font-weight:100;
+ width:95%;
+ margin:0 auto;
+}
+
+/*postgrid 文章標題*/
+.post-grid-container.flat .title{
+ width:95%;
+ margin:0 auto;
+ text-align:center;
+}
+
 /*postgrid 繼續閱讀按鈕*/
 .post-grid-container.flat .content .read-more{
  text-align:center;
@@ -3442,4 +3456,20 @@ header#masthead .hgroup{
  padding-bottom:20px;
  border-bottom-style:solid;
  border-bottom-width: 1px;
+}
+
+#header-sidebar aside{
+ display:inline-block;
+}
+
+.comment-form-author{
+ display:none;
+}
+
+.comment-form-email{
+ display:none;
+}
+
+.comment-form-url{
+ display:none;
 }
