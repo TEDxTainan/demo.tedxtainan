@@ -652,6 +652,7 @@ body.no-sidebar #primary {
   margin: 0 auto;
   width:80%;
 }
+
 /* =Responsive Layout
 ----------------------------------------------- */
 @media (max-width: 1080px) {
@@ -1133,6 +1134,7 @@ article.page .entry-categories {
   margin-top: 1.5em;
   color: #999999;
   font-size: 0.85em;
+  width:80%;
 }
 article.post .entry-categories a,
 article.page .entry-categories a {
@@ -1931,22 +1933,24 @@ body.layout-full {
 }
 .flexslider .flex-direction-nav li a.flex-prev {
   left: 40px;
-  background: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
+  background-size: contain;
+  background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
 }
 .flexslider .flex-direction-nav li a.flex-next {
   right: 40px;
-  background: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
+  background-size: contain;
+  background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .flexslider .flex-direction-nav li a {
     background-size: 32px 85px;
   }
   .flexslider .flex-direction-nav li a.flex-prev {
-    background-size: cover;
+    background-size: contain;
     background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
   }
   .flexslider .flex-direction-nav li a.flex-next {
-    background-size: cover;
+    background-size: contain;
     background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
   }
 }
@@ -2210,8 +2214,8 @@ body.layout-full {
   position: absolute;
   background-color: #3a3b3e;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   -webkit-border-radius: 130px;
   -moz-border-radius: 130px;
   border-radius: 130px;
@@ -3281,7 +3285,7 @@ header#masthead .hgroup{
 
 /*專欄選單*/
 .cmenu{
- width:25%;
+ width:30%;
  height:auto;  
  text-align:center;
  border-style:solid;
@@ -3338,12 +3342,37 @@ header#masthead .hgroup{
  width:21.3%;
 }
 
+.socialphoto div img{
+ height:200px;
+}
+
 /*有背景專欄文章*/
 .articleback .articlepart{
- width:80%; 
+ width:63%; 
+ margin-left:5%;
+ background-color:#fcfcfc;
+ padding:80px 40px 0px 40px;
+ text-align:left;
+}
+
+.articleback .carticlepart{
+ width:60%; 
  margin:0 auto;
  background-color:#fcfcfc;
  padding:80px 40px 0px 40px;
+}
+
+
+.articleback .carticlepart p,
+.articleback .articlepart p{
+ font-size:16px;
+ margin-top:4px;
+ margin-bottom:4px;
+}
+
+.articleback .articlepart img{
+ margin-top:15px;
+ margin-bottom:15px;
 }
 
 /*無背景專欄文章*/
@@ -3406,9 +3435,15 @@ header#masthead .hgroup{
   border-bottom-style:solid;
   border-top-width: 1px;
   border-bottom-width: 1px;
-  width:80%;
-  margin:0 auto;
+  width:100%;
   margin-top:5px;
+  font-size:15px;
+}
+
+.vtitle p{
+ padding-top:5px;
+ padding-bottom:5px;
+ margin-top:0px;
 }
 
 /*postgrid 文章內容*/
@@ -3416,6 +3451,9 @@ header#masthead .hgroup{
  font-weight:100;
  width:95%;
  margin:0 auto;
+ border-bottom-style:solid;
+ border-bottom-width: 1px;
+ 
 }
 
 /*postgrid 文章標題*/
@@ -3431,6 +3469,7 @@ header#masthead .hgroup{
  display:block;
  color:#888888;
  margin-top:20px;
+ margin-bottom:20px;
  padding-top:5px;
  padding-bottom:5px;
  width:35%;
