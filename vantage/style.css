@@ -550,6 +550,7 @@ header#masthead .hgroup #header-sidebar {
   display: box;
   box-pack: center;
   box-align: center;
+  padding-top:80px;
 }
 header#masthead .hgroup #header-sidebar aside.widget {
   margin-bottom: 0;
@@ -3162,15 +3163,21 @@ body.layout-full {
  text-align: center;
 }
 
+.pt-cv-title a{
+  color:#333333;
+}
+
 /*專欄文章牆下方readmore按鈕*/
 .pt-cv-content a {
  background-color:#fcfcfc;
- color:#888888;
+ color:black;
  border: 0;
  text-transform:uppercase;
- width:35%;
- margin-left:32.5%;
- margin-right:32.5%;
+ width:50%;
+ margin-left:25%;
+ margin-right:25%;
+ border-style:solid;
+ border-width: 1px;
 }
 
 /*滑過專欄文章牆下方readmore按鈕*/
@@ -3201,8 +3208,8 @@ body.layout-full {
 }
 
 /*網站主要選單區塊*/
-.main-navigation{             
-  background-color:#fcfcfc;
+.main-navigation{      
+  background-color:rgba(252,252,252,0.9);       
   border-top-style:solid; 
   border-bottom-style:solid;
   border-top-width: 1px;
@@ -3285,7 +3292,7 @@ header#masthead .hgroup{
 
 /*專欄選單*/
 .cmenu{
- width:30%;
+ width:40%;
  height:auto;  
  text-align:center;
  border-style:solid;
@@ -3296,8 +3303,8 @@ header#masthead .hgroup{
 /*專欄選單選項*/
 .cmenu .citem{
  display:inline; 
- width:50px;
- margin: 3px;
+ width:20%;
+ margin: 20px;
  padding: 5px;
 }
 
@@ -3428,7 +3435,7 @@ header#masthead .hgroup{
   display:none;
 }
 
-/*影片標題*/
+/*影片下方文字*/
 .vtitle{
   background-color:#fcfcfc;
   border-top-style:solid; 
@@ -3444,7 +3451,20 @@ header#masthead .hgroup{
  padding-top:5px;
  padding-bottom:5px;
  margin-top:0px;
+ margin-bottom: 0px;
 }
+
+.detail{
+ position:absolute; 
+ width:32%; 
+ z-index:100;
+ background-color:#fcfcfc;
+ display:none;
+ border-bottom-style:solid;
+ border-top-width: 1px;
+ border-bottom-width: 1px;
+}
+
 
 /*postgrid 文章內容*/
 .post-grid-container.flat .content{
@@ -3453,6 +3473,7 @@ header#masthead .hgroup{
  margin:0 auto;
  border-bottom-style:solid;
  border-bottom-width: 1px;
+ color:#666666;
  
 }
 
@@ -3467,14 +3488,20 @@ header#masthead .hgroup{
 .post-grid-container.flat .content .read-more{
  text-align:center;
  display:block;
- color:#888888;
+ color:#333333;
  margin-top:20px;
- margin-bottom:20px;
+ margin-bottom:14px;
  padding-top:5px;
  padding-bottom:5px;
  width:35%;
  margin-left:32.5%;
  margin-right:32.5%;
+ border-style:solid;
+ border-width: 1px;
+ border-bottom-left-radius: 3px; 
+ border-bottom-right-radius: 3px; 
+ border-top-left-radius: 3px; 
+ border-top-right-radius: 3px;
 }
 
 /*滑過postgrid 繼續閱讀按鈕*/
@@ -3511,4 +3538,15 @@ header#masthead .hgroup{
 
 .comment-form-url{
  display:none;
+}
+
+/*posy grid meta*/
+.title{
+ color:#333333;
+}
+
+/*專欄slider*/
+.textwidget .metaslider{
+ width:85%;
+ margin:0 auto;
 }
