@@ -1,0 +1,10 @@
+<script>
+jQuery(document).ready(function($){
+  $(".vtitle").hover(function(){
+		$(".detail",this).fadeToggle();
+	},
+	function(){
+		$(".detail",this).hide();
+	})
+});
+</script>
