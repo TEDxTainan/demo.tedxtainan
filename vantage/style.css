@@ -697,8 +697,8 @@ body.no-sidebar #primary {
     position: static;
     display: block;
     margin-top: 30px;
-    max-width: 100%;
     margin:0 auto;
+    width:100%;
   }
   body.responsive header#masthead .hgroup .support-text img,
   body.responsive header#masthead .hgroup #header-sidebar img {
@@ -3207,6 +3207,11 @@ body.layout-full {
  display:inline-block;
 }
 
+#hfirst{
+margin-left:18px;
+}
+
+
 /*網站主要選單區塊*/
 .main-navigation{      
   background-color:rgba(252,252,252,0.9);       
@@ -3353,30 +3358,6 @@ header#masthead .hgroup{
  height:200px;
 }
 
-/*有背景專欄文章*/
-.articleback .articlepart{
- width:63%; 
- margin-left:5%;
- background-color:#fcfcfc;
- padding:80px 40px 0px 40px;
- text-align:left;
-}
-
-.articleback .carticlepart{
- width:60%; 
- margin:0 auto;
- background-color:#fcfcfc;
- padding:80px 40px 0px 40px;
-}
-
-
-.articleback .carticlepart p,
-.articleback .articlepart p{
- font-size:16px;
- margin-top:4px;
- margin-bottom:4px;
-}
-
 .articleback .articlepart img{
  margin-top:15px;
  margin-bottom:15px;
@@ -3407,6 +3388,7 @@ header#masthead .hgroup{
   font-size: 20px;
   font-weight:600;
   height:60px;
+  padding-bottom: 10px;
 }
 
 /*專欄文章摘要*/
@@ -3549,4 +3531,175 @@ header#masthead .hgroup{
 .textwidget .metaslider{
  width:85%;
  margin:0 auto;
+}
+
+.grid-single{
+ max-width:30%;
+}
+
+.post-grid-container .link.BottomMiddle{
+ display:none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+.grid-single{
+ max-width:100%;
+}
+
+#colophon #footer-widgets #text-4{
+ display:none;
+}
+.post-grid-container .meta .date{
+ display:block;
+ width: 50%;
+ margin: 0 auto;
+ text-align: center
+ float: none;
+}
+
+.post-grid-container .meta{
+ text-align:center;
+}
+
+.post-grid-container .meta span{
+ padding-right:0px;
+}
+
+.post-grid-container .meta .cayegory{
+ float: none;
+ text-align: center;
+ width: 50%;
+}
+.post-grid-container.flat .content{
+ padding:10px 0px 0px 0px;
+}
+
+.post-grid-container.flat .title{
+ padding:0px;
+}
+.main-navigation ul li a{
+ font-size:13px;
+}
+
+#htotal{
+ display:none;
+}
+
+.articlepart iframe{
+ width:200px;
+ height:100px;
+}
+.hmenu .hitem:nth-last-child(2):after{
+ content:none;
+}
+.detail{
+ width:100%;
+}
+
+.articletitle{
+ font-size: 15px;
+ padding: 0px 5px 10px 5px;
+}
+
+#main {
+  background: #fcfcfc;
+  padding:0px 5px 35px 5px;
+}
+
+.hrdiv {
+ width:100%;
+ text-align:center;
+ display:inline-block;
+}
+
+/*水平分割線*/
+.hrdiv hr {
+ width:25%; 
+ display:inline-block;
+ vertical-align:middle;
+}
+
+/*分割線中夾的字*/
+.hrdiv h1{
+ width:20%;
+ font-size:15px;
+ display:inline-block;
+}
+
+#our{
+ display:none;
+}
+
+#main-slider{
+ display:none;
+}
+
+.articleback .carticlepart p, 
+.articleback .articlepart p{
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#searchblock{
+  display:none;
+}
+
+.hmenu{
+ text-align:center;
+}
+
+#hfirst{
+margin-left:0px;
+}
+
+.articleback{
+ background-size:100% 200px;
+ background-repeat: no-repeat;
+}
+
+.articleback .articlespace{
+ height:100px;
+}
+
+.articleback .carticlepart{
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 80px 5px 0px 5px;
+}
+
+.articleback .articlepart{
+ width:90%; 
+ margin:0 auto;
+ background-color:#fcfcfc;
+ padding:80px 5px 0px 5px;
+ text-align:left;
+}
+}
+
+@media screen and (min-width: 800px){
+.articleback .carticlepart p,
+.articleback .articlepart p{
+ font-size:16px;
+ margin-top:4px;
+ margin-bottom:4px;
+}
+
+.articleback .carticlepart{
+  width: 60%;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 80px 40px 0px 40px;
+}
+
+.articleback .articlepart{
+ width:63%; 
+ margin-left:5%;
+ background-color:#fcfcfc;
+ padding:80px 40px 0px 40px;
+ text-align:left;
+}
 }
