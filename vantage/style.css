@@ -621,8 +621,10 @@ body.no-sidebar #primary {
   width: 71.287%;
 }
 #secondary {
-  float: right;
   width: 23.762%;
+  position: absolute;
+  right: 10px;
+  top: 620px;
 }
 
 /*主選單下方區塊*/
@@ -3541,11 +3543,50 @@ header#masthead .hgroup{
  display:none;
 }
 
+#homep{
+ width:25px; 
+ height:25px;   
+ margin-bottom: 5px;
+}
 
+#homespace{
+ width:100%;
+ height: 50px;
+}
 
 @media screen and (max-width: 800px) {
 .grid-single{
  max-width:100%;
+}
+
+.pt-cv-content a{
+  width: 40%;
+  margin-left: 30%;
+}
+
+.post-grid-container.flat .content .read-more{
+  width: 50%;
+  margin-left: 25%;
+}
+
+#homespace{
+ height: 5px;
+}
+
+.main-navigation ul li a{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#homep{
+ width:15px; 
+ height:15px;   
+ margin-bottom: 5px;
+}
+
+.main-navigation ul li:after{  
+ content:"|";
+ font-size:12px;
 }
 
 #colophon #footer-widgets #text-4{
@@ -3623,7 +3664,7 @@ header#masthead .hgroup{
 
 /*分割線中夾的字*/
 .hrdiv h1{
- width:20%;
+ width:30%;
  font-size:15px;
  display:inline-block;
 }
@@ -3661,22 +3702,26 @@ margin-left:0px;
 }
 
 .articleback .articlespace{
- height:100px;
+ height:50px;
 }
 
 .articleback .carticlepart{
   width: 90%;
   margin: 0 auto;
   background-color: #fcfcfc;
-  padding: 80px 5px 0px 5px;
+  padding: 40px 5px 0px 5px;
 }
 
 .articleback .articlepart{
  width:90%; 
  margin:0 auto;
  background-color:#fcfcfc;
- padding:80px 5px 0px 5px;
+ padding:40px 5px 0px 5px;
  text-align:left;
+}
+
+#secondary{
+ display:none;
 }
 }
 
@@ -3697,9 +3742,28 @@ margin-left:0px;
 
 .articleback .articlepart{
  width:63%; 
- margin-left:5%;
+ margin-left:2%;
  background-color:#fcfcfc;
  padding:80px 40px 0px 40px;
  text-align:left;
+}
+
+#pt-cv-view-f8514b3a10 .pt-cv-thumbnail{
+ float:left;
+ margin-right:20px;
+}
+
+#pt-cv-view-f8514b3a10 .pt-cv-title{
+ text-align:left;
+}
+
+#pt-cv-view-f8514b3a10 .pt-cv-content{
+ width:75%;
+}
+
+#pt-cv-view-f8514b3a10 .pt-cv-content a{
+ width:20%;
+ margin-left:40%;
+ margin-right:40%;
 }
 }
