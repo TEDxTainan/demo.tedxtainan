@@ -70,7 +70,7 @@ tr,
 th,
 td {
   border: 0;
-  font-family: inherit;
+  font-family:hans;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
@@ -149,8 +149,8 @@ input,
 select,
 textarea {
   color: #333;
-  font-family: Arial;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: hans,Arial;
+  font-family: hans,"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 1.5em;
   font-size: 13px;
   word-wrap: break-word;
@@ -1311,7 +1311,7 @@ article.page.post-with-thumbnail-icon .entry-main {
 .entry-content code {
   display: block;
   background: white;
-  font-family: "Courier New", Courier, mono;
+  font-family:hans, "Courier New", Courier, mono;
   border: 1px solid #d9d9d9;
   padding: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09);
@@ -3299,7 +3299,7 @@ header#masthead .hgroup{
 
 /*專欄選單*/
 .cmenu{
- width:40%;
+ width:50%;
  height:auto;  
  text-align:center;
  border-style:solid;
@@ -3440,15 +3440,38 @@ header#masthead .hgroup{
 
 .detail{
  position:absolute; 
- width:32%; 
+ width:30%; 
  z-index:100;
- background-color:#fcfcfc;
  display:none;
- border-bottom-style:solid;
- border-top-width: 1px;
- border-bottom-width: 1px;
+ text-align:left;
+ padding:3px;
+ background:#88b7d5;
+ border: 4px solid #c2e1f5;
 }
 
+.detail:after, .detail:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.detail:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.detail:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
+}
 
 /*postgrid 文章內容*/
 .post-grid-container.flat .content{
@@ -3610,8 +3633,8 @@ header#masthead .hgroup{
 
 .post-grid-container .meta .cayegory{
  float: none;
- text-align: center;
- width: 50%;
+ text-align: right;
+ width: 40%;
 }
 .post-grid-container.flat .content{
  padding:10px 0px 0px 0px;
