@@ -3599,6 +3599,8 @@ header#masthead .hgroup{
 .main-navigation ul li a{
   padding-left: 4px;
   padding-right: 4px;
+  line-height:30px;
+  font-size:13px;
 }
 
 #homep{
@@ -3615,6 +3617,7 @@ header#masthead .hgroup{
 #colophon #footer-widgets #text-4{
  display:none;
 }
+
 .post-grid-container .meta .date{
  display:block;
  width: 50%;
@@ -3636,6 +3639,7 @@ header#masthead .hgroup{
  text-align: right;
  width: 40%;
 }
+
 .post-grid-container.flat .content{
  padding:10px 0px 0px 0px;
 }
@@ -3643,8 +3647,9 @@ header#masthead .hgroup{
 .post-grid-container.flat .title{
  padding:0px;
 }
-.main-navigation ul li a{
- font-size:13px;
+
+.main-navigation ul li{
+ height:30px;
 }
 
 #htotal{
@@ -3688,7 +3693,7 @@ header#masthead .hgroup{
 /*分割線中夾的字*/
 .hrdiv h1{
  width:30%;
- font-size:15px;
+ font-size:24px;
  display:inline-block;
 }
 
@@ -3746,6 +3751,14 @@ margin-left:0px;
 #secondary{
  display:none;
 }
+
+.cmenu .citem{
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  padding:0px;
+}
+
 }
 
 @media screen and (min-width: 800px){
