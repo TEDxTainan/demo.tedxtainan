@@ -1137,7 +1137,7 @@ article.page .entry-categories {
   margin-top: 1.5em;
   color: #999999;
   font-size: 0.85em;
-  width:80%;
+  width:100%;
 }
 article.post .entry-categories a,
 article.page .entry-categories a {
@@ -1937,12 +1937,12 @@ body.layout-full {
 .flexslider .flex-direction-nav li a.flex-prev {
   left: 40px;
   background-size: contain;
-  background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
+  background-image: url(http://blog.tedxtainan.org/wp-content/uploads/2015/04/arrow.png);
 }
 .flexslider .flex-direction-nav li a.flex-next {
   right: 40px;
   background-size: contain;
-  background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
+  background-image: url(http://blog.tedxtainan.org/wp-content/uploads/2015/04/arrow-2.png);
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .flexslider .flex-direction-nav li a {
@@ -1950,11 +1950,11 @@ body.layout-full {
   }
   .flexslider .flex-direction-nav li a.flex-prev {
     background-size: contain;
-    background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow.png);
+    background-image: url(http://blog.tedxtainan.org/wp-content/uploads/2015/04/arrow.png);
   }
   .flexslider .flex-direction-nav li a.flex-next {
     background-size: contain;
-    background-image: url(http://demo.tedxtainan.com/wp-content/uploads/2015/04/arrow-2.png);
+    background-image: url(http://blog.tedxtainan.org/wp-content/uploads/2015/04/arrow-2.png);
   }
 }
 .flexslider:hover .flex-direction-nav li a {
@@ -3371,11 +3371,16 @@ header#masthead .hgroup{
  margin:0 auto;
  background-color:#fcfcfc;
  padding:0px 40px 0px 40px;
+ letter-spacing: 5px;
 }
 
 /*專欄背景空格*/
 .articlespace{
  height:400px;
+}
+
+.articlespaceb{
+ height:600px;
 }
 
 /*專欄文章背景圖片*/
@@ -3385,9 +3390,10 @@ header#masthead .hgroup{
 }
 
 /*專欄文章逼題*/
-.articletitle{
+.articletitle,
+.eventtitle{
   color: #3b3b3b;
-  font-size: 20px;
+  font-size: 24px;
   font-weight:600;
   height:60px;
   padding-bottom: 10px;
@@ -3439,14 +3445,15 @@ header#masthead .hgroup{
 }
 
 .detail{
+opacity:0;
  position:absolute; 
  width:30%; 
  z-index:100;
  display:none;
  text-align:left;
  padding:3px;
- background:#88b7d5;
- border: 4px solid #c2e1f5;
+ background:#fcfcfc;
+ border: 4px solid black;
 }
 
 .detail:after, .detail:before {
@@ -3462,13 +3469,13 @@ header#masthead .hgroup{
 
 .detail:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-bottom-color: #88b7d5;
+	border-bottom-color:#fcfcfc;
 	border-width: 30px;
 	margin-left: -30px;
 }
 .detail:before {
 	border-color: rgba(194, 225, 245, 0);
-	border-bottom-color: #c2e1f5;
+	border-bottom-color:black;
 	border-width: 36px;
 	margin-left: -36px;
 }
@@ -3578,6 +3585,11 @@ header#masthead .hgroup{
 }
 
 @media screen and (max-width: 800px) {
+
+.flex-direction-nav{
+ display:none;
+}
+
 .grid-single{
  max-width:100%;
 }
@@ -3667,8 +3679,9 @@ header#masthead .hgroup{
  width:100%;
 }
 
-.articletitle{
- font-size: 15px;
+.articletitle,
+.eventtitle{
+ font-size: 16px;
  padding: 0px 5px 10px 5px;
 }
 
@@ -3693,7 +3706,7 @@ header#masthead .hgroup{
 /*分割線中夾的字*/
 .hrdiv h1{
  width:30%;
- font-size:24px;
+ font-size:20px;
  display:inline-block;
 }
 
@@ -3730,7 +3743,11 @@ margin-left:0px;
 }
 
 .articleback .articlespace{
- height:50px;
+ height:130px;
+}
+
+.articleback .articlespaceb{
+  height:200px;
 }
 
 .articleback .carticlepart{
@@ -3759,9 +3776,25 @@ margin-left:0px;
   padding:0px;
 }
 
+.sizebtn{
+ width:15px;
+}
+
+.sizebtn a{
+ font-size:13px;
+}
+
 }
 
 @media screen and (min-width: 800px){
+.sizebtn{
+ width:20px;
+}
+
+.sizebtn a{
+ font-size:16px;
+}
+
 .articleback .carticlepart p,
 .articleback .articlepart p{
  font-size:16px;
@@ -3777,11 +3810,12 @@ margin-left:0px;
 }
 
 .articleback .articlepart{
- width:63%; 
- margin-left:2%;
+ width:65%; 
+ margin-left:5%;
  background-color:#fcfcfc;
  padding:80px 40px 0px 40px;
  text-align:left;
+ font-size: 13px;
 }
 
 #pt-cv-view-f8514b3a10 .pt-cv-thumbnail{
@@ -3802,4 +3836,34 @@ margin-left:0px;
  margin-left:40%;
  margin-right:40%;
 }
+}
+
+#circleicon-widget-15{
+ margin-left:25px;
+}
+
+.metaslider{
+ margin:0 auto;
+}
+
+.sizebtn{
+ letter-spacing: 0px;
+ margin:2px;
+ text-align:center;
+ display: inline-block;
+ border: solid 1px #3b3b3b;
+}
+
+.sizebtn a{
+ text-decoration: none;
+ color:#3b3b3b;
+}
+
+.sizebtn a:hover{
+ text-decoration: none;
+ color:#3b3b3b;
+}
+
+.fontbtn{
+ margin-top: 10px;
 }
